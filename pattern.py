@@ -1,0 +1,9 @@
+# n = int(input("Enter n:"))
+
+# for i in range(0,n):
+#     for j in range(0,n):
+#         print("*",end=" ")
+#     print(end="\n")
+
+print("ajay",end=" ")
+print("vijay")
