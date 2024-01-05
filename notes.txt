@@ -89,6 +89,81 @@ student1 = student("John", 20, "Male", 1001)
 # Call the display method on the student1 object
 student1.display()
 
+inheritancen defination in python with example
+class Parent:
+    def __init__(self, name):
+        self.name = name
+    def showName(self):
+        print("Parent's name is", self.name)
+
+class Child(Parent):
+    def __init__(self, name, age):
+        Parent.__init__(self, name)
+        self.age = age
+    def showAge(self):
+        print("Child's age is", self.age)
+
+# Create an object of the Child class
+child1 = Child("Alice", 10)
+child1.showName()
+child1.showAge()
+Output:
+Parent's name is Alice
+Child's age is 10
+Encapsulation definition and example in Python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+student1 = Student("John", 20)
+student1.display()
+Output:
+Name: John
+Age: 20
+Abstraction definition and example in Python
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def area(self):
+        return self.length * self.width
+
+rectangle = Rectangle(5, 3)
+print(rectangle.area())  # Output: 15
+Inheritance definition and example in Python
+class Animal:
+    def __init__(self, name):
+        self.name
+
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak
+        print("Dog barks")
+
+dog = Dog("Max")
+dog.speak()  # Output: Dog barks
+Polymorphism definition and example in Python
+def add(x, y):
+    return x + y
+
+def add(a, b, c):
+    return a + b + c
+
+print(add(1, 2))  # Output: 3
+print(add(1, 2, 3))  # Output: 6
 
 #--------------------------Date:06-01-2024-------------------------------#
 
