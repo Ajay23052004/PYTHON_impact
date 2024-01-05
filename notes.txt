@@ -165,6 +165,99 @@ def add(a, b, c):
 print(add(1, 2))  # Output: 3
 print(add(1, 2, 3))  # Output: 6
 
+
+object oriented programing defination?
+In object-oriented programming, polymorphism refers to the ability of a variable, function, or object to take on multiple forms. This allows for greater flexibility
+4 pllers of object oriented programing?
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+4. Abstraction
+Encapsulation is one of the four core principles of Object-Oriented Programming 
+access specifiers in python?
+public, protected, and private are three access specifiers in Python.
+public: The public access specifier allows the member to be accessed from anywhere within the program.
+protected: The protected access specifier allows the member to be accessed from within the class and its subclasses.
+private: The private access specifier restricts the member to be accessed only from within the class.
+protected: The protected access modifier combines the features of both public and private access modifiers.
+It can be accessed by the members of the same class as well as derived classes (subclasses).
+private: The private access modifier restricts the member to be accessed only from within the class.
+Access Modifiers Example
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self._age = age
+    
+    def display(self):
+        print(f"Name: {self.name}, Age: {self._age}")
+
+# Creating an object of Person class
+person = Person("John", 30)
+
+# Accessing public attribute
+print(person.name)
+
+# Accessing protected attribute through a method
+person.display()
+
+# Trying to access private attribute
+try:
+    print(person._age)
+except AttributeError:
+    print("Cannot access private attribute directly.")
+
+# Trying to modify private attribute
+person._age = 35
+print(person._age)  # This will give an error
+
+
+
+ex ..
+_modifier == protected(_)
+__modifier == private(__)
+modifier = public()
+
+
+#polymorephism
+A polymorphic class is one that can take on many forms. It means that objects of different
+types can be substituted for each other.
+
+
+#abstraction
+A class is considered abstract if it contains one or more abstract methods.
+An abstract method is a method that has a declaration but does not have an implementation.
+An abstract class must also be declared abstract using the abstract keyword.
+
+
+#encapsulation
+Encapsulation is the process of wrapping data and functions that manipulate that data into a single unit, 
+the class.
+
+
+#inheritance
+In object-oriented programming, inheritance is a feature that allows one class to inherit the properties and methods from another class.
+Inheritance allows us to create new classes based on existing ones by inheriting their properties and methods
+#polymorphism
+In object-oriented programming, polymorphism is a feature that allows you to perform the same action in different ways.
+Polymorphism allows values of different types to be treated as values of another type. The term comes
+from the Greek words poly and morphs, meaning "many forms."
+#method overriding vs method hiding
+In object-oriented programming, method overriding and method hiding are two different ways to implement polymorphism.
+Both allow you to define a method with the same name in a subclass, but they have different semantics.
+Method overriding is when a subclass defines a method with the same name and signature as a method in its superclass.
+Method hiding is when a subclass defines a method with the same name and signature as a method in its superclass, but with a different implementation.
+#abstraction
+In object-oriented programming, abstraction is the process of hiding the implementation details and showing only the essential features to the user.
+It allows users to focus on the functionality provided by the class, rather than the details of how it is implemented.
+#encapsulation
+In object-oriented programming, encapsulation is the process of wrapping data and functions that operate on that data into a single unit, called a class.
+This prevents other parts of the code from directly accessing and modifying the data, and ensures that the data remains consistent and secure.
+#inheritance
+In object-oriented programming, inheritance allows one class to inherit the properties and methods of another class.
+Subclasses can add their own properties and methods, and override methods from the superclass.
+
+
+
 #--------------------------Date:06-01-2024-------------------------------#
 
 
