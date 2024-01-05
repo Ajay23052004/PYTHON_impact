@@ -7,8 +7,9 @@ class Bird:
         print("swim faster")
 class penguin(Bird):
     def __init__(self):
-        super().__init__()
         print("Pengin is ready")
+        super().__init__()
+        
     def whois(self):
         print("Penguin")
     def run(self):
